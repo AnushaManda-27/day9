@@ -20,6 +20,11 @@ public class PinCode {
 
       String Pincode1 ="400708";
       System.out.println( Pincode1 +":" +isValid(Pincode1));
+      
+      String Pincode2 ="B40070";
+      System.out.println( Pincode2 +":" +isValid(Pincode2));
+      
    }
+   
 
 }
