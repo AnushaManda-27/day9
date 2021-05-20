@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 public class PinCode {
     public static boolean isValid(String pincode) {
 
-      String ZIP = "[1-9]{1}[0-9]{5}";
+      String ZIP = "^[1-9]{1}[0-9]{5}$";
 
       Pattern p = Pattern.compile(ZIP);
 
@@ -24,7 +24,11 @@ public class PinCode {
       String Pincode2 ="B40070";
       System.out.println( Pincode2 +":" +isValid(Pincode2));
       
+      String Pincode3 ="B40070C";
+      System.out.println( Pincode3 +":" +isValid(Pincode3));
+      
    }
    
 
 }
+
